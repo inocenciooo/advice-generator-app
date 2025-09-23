@@ -1,0 +1,82 @@
+:root {
+  --Blue200: hsl(193, 38%, 86%);
+  --Green300: hsl(150, 100%, 66%);
+  --Blue600: hsl(217, 19%, 38%);
+  --Blue900: hsl(217, 19%, 24%);
+  --Blue950: hsl(218, 23%, 16%);
+}
+
+@font-face {
+  font-family: "manrope";
+  src: url(../fonts/Manrope/static/Manrope-Bold.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "manrope";
+  font-size: 10px;
+}
+
+button {
+  all: unset;
+}
+
+body {
+  min-height: 100vh;
+  background-color: var(--Blue950);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  background-color: var(--Blue900);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  text-align: center;
+  margin: 2rem;
+  border-radius: 16px;
+  min-height: 33rem;
+  width: 54rem;
+  padding: 4.5rem 0rem 0rem 0rem;
+  box-shadow: 0rem 0rem 2rem -.2rem rgba(0, 0, 0, 0.377);
+}
+
+.card h3 {
+  font-size: 1.4rem;
+  color: var(--Green300);
+  text-transform: uppercase;
+  letter-spacing: 0.4rem;
+  margin-bottom: 2.4rem;
+}
+
+.card p {
+  font-size: 2.75rem;
+  color: var(--Blue200);
+  height: 15rem;
+  width: 45rem;
+  text-align: center;
+}
+
+#button-advice {
+  display: flex;
+  background-color: var(--Green300);
+  height: 2.5rem;
+  width: 2.5rem;
+  padding: 2rem;
+  border-radius: 100%;
+  transform: translateY(65%);
+  transition: 0.2s ease-out;
+}
+
+#button-advice:hover {
+  box-shadow: 0rem 0rem 2.5rem 0rem var(--Green300);
+  cursor: pointer;
+}
