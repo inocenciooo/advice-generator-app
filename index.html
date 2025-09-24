@@ -4,11 +4,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- displays site properly based on user's device -->
+
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
 
   <link rel="stylesheet" href="./assets/css/main.css">
+  <link rel="stylesheet" href="./assets/css/responsive.css">
 
   <title>Advice generator app | Vinícius Inocêncio</title>
 
@@ -16,10 +17,13 @@
 
 <body>
   <div class="card">
-    <h3>Advice #<span id="advice-id">117</span></h3>
-    <p>&lsquo;&lsquo;<span id="advice-text">it is easy to sit up and take notice, whats's difficult is getting up and taking
-        action.</span>&rsquo;&rsquo;</p>
-    <img src="./assets/images/pattern-divider-desktop.svg">
+    <h3>Advice #<span id="advice-id"></span></h3>
+    <p>&lsquo;&lsquo;<span id="advice-text"></span>&rsquo;&rsquo;</p>
+
+    <picture>
+      <source media="(max-width: 520px)" srcset="./assets/images/pattern-divider-mobile.svg">
+      <img class="divider" src="./assets/images/pattern-divider-desktop.svg">
+    </picture>
     <button id="button-advice"><img src="./assets/images/icon-dice.svg"></button>
   </div>
 
